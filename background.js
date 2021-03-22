@@ -15,10 +15,6 @@ export class Background {
         this.asteroids()
     }
 
-
-    render(){
-    }
-
     addBackground(){
         let stars = PIXI.Sprite.from('stars')
         let stars2= PIXI.Sprite.from('stars2')
@@ -61,7 +57,7 @@ export class Background {
         const asteroidContainer = new PIXI.Container()
         asteroidContainer.width = this.stage.width
         asteroidContainer.height = this.stage.height
-        for(let i = 0; i < 100; i++){
+        for(let i = 0; i < 50; i++){
             let randInt = this.getRandomInt(1, 21)
             let texture = "smallAsteroid" + randInt.toString()
             let asteroidSprite = new PIXI.Sprite.from(texture)
@@ -80,7 +76,7 @@ export class Background {
             let timeline = new TimelineMax({repeat: -1, paused: true})
             timeline.fromTo(asteroidSprite.position, {x: x, y: y}, {x: -window.innerWidth,
                 y: destinationY,
-                duration: this.getRandomInt(200, 500)}, i * 0.5)
+                duration: this.getRandomInt(500, 5000)}, i * 20)
             timeline.play()
         }
         this.stage.addChild(asteroidContainer)

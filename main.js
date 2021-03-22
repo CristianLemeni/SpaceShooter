@@ -1,5 +1,6 @@
 import "./background.js";
 import {Background} from "./background.js";
+import {Ship} from "./ship.js";
 
 $(document).ready(function () {
     const canvas = document.getElementById("gameCanvas");
@@ -102,7 +103,39 @@ $(document).ready(function () {
     loader.load(()=>{
         let bk = new Background()
         bk.init(stage)
+
+        let mouseDown = false
+
+        let ship = new Ship()
+        ship.init("bigShip1", stage)
+        ship.addGuns('gun2Right', [{x: 40, y: 20}, {x: 89, y: 20}])
+        ship.addSingleGun('gun9', {x: 15, y: 90})
+        ship.addSingleGun('gun9', {x: 115, y: 90})
+        ship.addEngine('multipleLasers', 67, 195)
+
+        ship.addAmmoType("laser1")
+
+        //movement
+        document.addEventListener("mousedown", (evt)=>{
+            ship.move(evt.x, evt.y)
+            mouseDown = true
+        })
+        document.addEventListener("mousemove", (evt)=>{
+            if(mouseDown){
+                ship.move(evt.x, evt.y)
+            }
+        })
+        document.addEventListener('mouseup', ()=>{
+            mouseDown = false
+        })
+        document.addEventListener('keydown', (evt)=>{
+            if(evt.code == 'Space'){
+                ship.shootGuns()
+            }
+        })
+
     })
+
 
     function resize() {
         renderer.resize(window.innerWidth, window.innerHeight)

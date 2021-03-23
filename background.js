@@ -4,12 +4,8 @@ export class Background {
     init(stage) {
         this.stage = stage
         this.background = new PIXI.Container()
-        this.battlefield = new PIXI.Container()
 
-        this.background.addChild(this.battlefield)
         this.stage.addChild(this.background)
-        this.updatePositions()
-
         this.addBackground()
 
         this.asteroids()
@@ -82,11 +78,6 @@ export class Background {
         this.stage.addChild(asteroidContainer)
     }
 
-
-
-    updatePositions(){
-        this.battlefield.position.set(window.innerWidth/2, window.innerHeight/2)
-    }
 
     getRandomInt(min, max) {
         min = Math.ceil(min);

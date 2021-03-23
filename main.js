@@ -98,6 +98,9 @@ $(document).ready(function () {
     loader.add("yellowLaser", "assets/yellowLaser.png")
     loader.add("yellowLaser2", "assets/yellowLaser.png")
     loader.add("yellowStar", "assets/yellowStar.png")
+    loader.add("explosion0", "assets/explosion0.png")
+    loader.add("explosion1", "assets/explosion1.png")
+    loader.add("explosion2", "assets/explosion2.png")
 
 
     loader.load(()=>{
@@ -130,11 +133,59 @@ $(document).ready(function () {
         })
         document.addEventListener('keydown', (evt)=>{
             if(evt.code == 'Space'){
-                ship.shootGuns()
+                ship.shootGuns(1, 'Player', 5)
             }
         })
 
+        let enemyShips = addEnemies(1, {x: 500, y: 250})
+
+        //enemy movement
+        let enemyTimeline = new TimelineMax({repeat: -1, paused: true})
+        for(let i = 0; i < enemyShips.length; i++){
+            enemyTimeline.add(()=>{
+                enemyShips[i].moveEnemy(50,250, 22)
+            })
+            enemyTimeline.add(()=>{
+                enemyShips[i].shootGuns(-1, 'Enemy', 15)
+            }, 22)
+            enemyTimeline.add(()=>{
+                enemyShips[i].moveEnemy(window.innerWidth - window.innerWidth/4, 250, 22)
+            })
+            enemyTimeline.add(()=>{
+                enemyShips[i].shootGuns(-1, 'Enemy', 15)
+            }, 44)
+        }
+        enemyTimeline.play()
+
+
+        let collisionTimeline = new TimelineMax({repeat: -1, paused: true})
+        collisionTimeline.add(()=>{
+            for(let i = 0; i < stage.children[0].children.length; i++){
+                try{
+                    if(stage.children[0].children[i].name == 'projectilePlayer'){
+                        if(boxesIntersect(stage.children[0].children[i], enemyShips[0].container)){
+                            // alert('enemy has been shot')
+                            stage.children[0].removeChild(stage.children[0].children[i])
+                            explosion(enemyShips[0].container)
+                            collisionTimeline.delay(2)
+                        }
+                    }
+                    if(stage.children[0].children[i].name == 'projectileEnemy'){
+                        if(boxesIntersect(stage.children[0].children[i], ship.container)){
+                            // alert('player has been shot')
+                            stage.children[0].removeChild(stage.children[0].children[i])
+                            explosion(ship.container)
+                            collisionTimeline.delay(2)
+                        }
+                    }
+                }catch (e){}
+            }
+        }, 0.1)
+        collisionTimeline.play()
+
+
     })
+
 
 
     function resize() {
@@ -142,5 +193,49 @@ $(document).ready(function () {
     }
     window.onresize = resize;
 
+
+    function boxesIntersect(a, b) {
+        var ab = a.getBounds();
+        var bb = b.getBounds();
+        return ab.x + ab.width > bb.x && ab.x < bb.x + bb.width && ab.y + ab.height > bb.y && ab.y < bb.y + bb.height;
+    }
+
+    function addEnemies(nr, pos) {
+        let enemies = []
+        for(let i = 0; i < nr; i++){
+            let enemyShip = new Ship()
+            enemyShip.init("bigShip2", stage)
+            enemyShip.addGuns('gun2Right', [{x: 120, y: 10}, {x: 52, y: 10}])
+            enemyShip.addGuns('gun6Right', [{x: 150, y: 100}, {x: 22, y: 100}])
+            enemyShip.addEngine('greenLaser', 85, 240)
+            enemyShip.addAmmoType("yellowLaser")
+            enemyShip.container.position.set(pos.x, pos.y)
+            enemyShip.container.scale.y = -1
+
+            enemies.push(enemyShip)
+        }
+        return enemies
+    }
+
+    function explosion(obj){
+        let explosionFrames = ["assets/explosion0.png","assets/explosion1.png","assets/explosion1.png"];
+        let textureArray = [];
+
+        for (let i = 0; i < 3; i++) {
+            let texture = PIXI.Texture.from(explosionFrames[i]);
+            textureArray.push(texture);
+        };
+
+        let animatedSprite = new PIXI.AnimatedSprite(textureArray);
+        stage.addChild(animatedSprite)
+        animatedSprite.position.set(obj.position.x + obj.width/2, obj.y + obj.height/4)
+        animatedSprite.anchor.set(0.5)
+        animatedSprite.loop = false
+        animatedSprite.play()
+
+        animatedSprite.onComplete = function (){
+            stage.removeChild(animatedSprite)
+        }
+    }
 
 });

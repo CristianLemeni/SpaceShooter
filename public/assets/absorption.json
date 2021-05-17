@@ -1,0 +1,84 @@
+{"frames": {
+
+"00.png":
+{
+	"frame": {"x":743,"y":515,"w":385,"h":437},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":72,"y":41,"w":385,"h":437},
+	"sourceSize": {"w":512,"h":512}
+},
+"01.png":
+{
+	"frame": {"x":1488,"y":487,"w":437,"h":443},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":41,"y":43,"w":437,"h":443},
+	"sourceSize": {"w":512,"h":512}
+},
+"02.png":
+{
+	"frame": {"x":1488,"y":1,"w":484,"h":477},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":23,"w":484,"h":477},
+	"sourceSize": {"w":512,"h":512}
+},
+"03.png":
+{
+	"frame": {"x":1,"y":1,"w":512,"h":493},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":512,"h":493},
+	"sourceSize": {"w":512,"h":512}
+},
+"04.png":
+{
+	"frame": {"x":976,"y":1,"w":510,"h":511},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":511},
+	"sourceSize": {"w":512,"h":512}
+},
+"05.png":
+{
+	"frame": {"x":496,"y":1,"w":512,"h":478},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":22,"w":512,"h":478},
+	"sourceSize": {"w":512,"h":512}
+},
+"06.png":
+{
+	"frame": {"x":1,"y":515,"w":410,"h":378},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":42,"y":80,"w":410,"h":378},
+	"sourceSize": {"w":512,"h":512}
+},
+"07.png":
+{
+	"frame": {"x":381,"y":515,"w":400,"h":360},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":64,"y":72,"w":400,"h":360},
+	"sourceSize": {"w":512,"h":512}
+},
+"08.png":
+{
+	"frame": {"x":1182,"y":514,"w":308,"h":285},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":106,"y":114,"w":308,"h":285},
+	"sourceSize": {"w":512,"h":512}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "absorption.png",
+	"format": "RGBA8888",
+	"size": {"w":1966,"h":926},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:e1ef0056db9ee0f667c4e7a9a36212ba:d635cc144300f4f335bb63b55f1fa0e9:c8c4fc4914de826c1cce71d4dc83f16a$"
+}
+}

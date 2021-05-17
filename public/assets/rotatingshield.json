@@ -1,0 +1,108 @@
+{"frames": {
+
+"00.png":
+{
+	"frame": {"x":1,"y":1,"w":150,"h":275},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":25,"w":150,"h":275},
+	"sourceSize": {"w":320,"h":320}
+},
+"01.png":
+{
+	"frame": {"x":1,"y":278,"w":150,"h":275},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":25,"w":150,"h":275},
+	"sourceSize": {"w":320,"h":320}
+},
+"02.png":
+{
+	"frame": {"x":153,"y":1,"w":150,"h":275},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":25,"w":150,"h":275},
+	"sourceSize": {"w":320,"h":320}
+},
+"03.png":
+{
+	"frame": {"x":278,"y":278,"w":150,"h":275},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":25,"w":150,"h":275},
+	"sourceSize": {"w":320,"h":320}
+},
+"04.png":
+{
+	"frame": {"x":305,"y":1,"w":150,"h":275},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":25,"w":150,"h":275},
+	"sourceSize": {"w":320,"h":320}
+},
+"05.png":
+{
+	"frame": {"x":457,"y":1,"w":150,"h":275},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":25,"w":150,"h":275},
+	"sourceSize": {"w":320,"h":320}
+},
+"06.png":
+{
+	"frame": {"x":555,"y":278,"w":150,"h":275},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":25,"w":150,"h":275},
+	"sourceSize": {"w":320,"h":320}
+},
+"07.png":
+{
+	"frame": {"x":609,"y":1,"w":150,"h":275},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":25,"w":150,"h":275},
+	"sourceSize": {"w":320,"h":320}
+},
+"08.png":
+{
+	"frame": {"x":761,"y":1,"w":150,"h":275},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":25,"w":150,"h":275},
+	"sourceSize": {"w":320,"h":320}
+},
+"09.png":
+{
+	"frame": {"x":832,"y":278,"w":150,"h":275},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":25,"w":150,"h":275},
+	"sourceSize": {"w":320,"h":320}
+},
+"10.png":
+{
+	"frame": {"x":913,"y":1,"w":150,"h":275},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":25,"w":150,"h":275},
+	"sourceSize": {"w":320,"h":320}
+},
+"11.png":
+{
+	"frame": {"x":1065,"y":1,"w":150,"h":275},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":25,"w":150,"h":275},
+	"sourceSize": {"w":320,"h":320}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "rotatingshield.png",
+	"format": "RGBA8888",
+	"size": {"w":1216,"h":429},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:5e6cc1a64ceed81ce28d14aabf1782f6:702fc1e95a5305a1b6e59fe82ac0c2e6:08e3263bfa4b05a026f9810ee0cec6e6$"
+}
+}

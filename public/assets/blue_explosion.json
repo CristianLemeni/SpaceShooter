@@ -1,0 +1,84 @@
+{"frames": {
+
+"0000.png":
+{
+	"frame": {"x":425,"y":58,"w":46,"h":46},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":147,"y":147,"w":46,"h":46},
+	"sourceSize": {"w":340,"h":340}
+},
+"0001.png":
+{
+	"frame": {"x":425,"y":1,"w":55,"h":55},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":142,"y":142,"w":55,"h":55},
+	"sourceSize": {"w":340,"h":340}
+},
+"0002.png":
+{
+	"frame": {"x":341,"y":85,"w":76,"h":72},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":132,"y":134,"w":76,"h":72},
+	"sourceSize": {"w":340,"h":340}
+},
+"0003.png":
+{
+	"frame": {"x":341,"y":1,"w":82,"h":82},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":129,"y":129,"w":82,"h":82},
+	"sourceSize": {"w":340,"h":340}
+},
+"0004.png":
+{
+	"frame": {"x":236,"y":637,"w":159,"h":233},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":90,"y":46,"w":159,"h":233},
+	"sourceSize": {"w":340,"h":340}
+},
+"0005.png":
+{
+	"frame": {"x":285,"y":341,"w":201,"h":294},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":69,"y":16,"w":201,"h":294},
+	"sourceSize": {"w":340,"h":340}
+},
+"0006.png":
+{
+	"frame": {"x":1,"y":625,"w":213,"h":233},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":63,"y":46,"w":213,"h":233},
+	"sourceSize": {"w":340,"h":340}
+},
+"0007.png":
+{
+	"frame": {"x":1,"y":341,"w":282,"h":282},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":29,"w":282,"h":282},
+	"sourceSize": {"w":340,"h":340}
+},
+"0008.png":
+{
+	"frame": {"x":1,"y":1,"w":338,"h":338},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":1,"w":338,"h":338},
+	"sourceSize": {"w":340,"h":340}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "blue_explosion.png",
+	"format": "RGBA8888",
+	"size": {"w":487,"h":839},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:0bc4d99c43097b955348cf40bb982128:1dca5e4ec75d5ee8bd2b95b6d79877f6:3a4ed4ef55eb206640172f6d538572fa$"
+}
+}

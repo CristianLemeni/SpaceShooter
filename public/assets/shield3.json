@@ -1,0 +1,100 @@
+{"frames": {
+
+"00.png":
+{
+	"frame": {"x":291,"y":289,"w":285,"h":288},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":27,"w":285,"h":288},
+	"sourceSize": {"w":340,"h":340}
+},
+"01.png":
+{
+	"frame": {"x":1,"y":1,"w":286,"h":288},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":27,"w":286,"h":288},
+	"sourceSize": {"w":340,"h":340}
+},
+"02.png":
+{
+	"frame": {"x":291,"y":1,"w":286,"h":288},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":27,"w":286,"h":288},
+	"sourceSize": {"w":340,"h":340}
+},
+"03.png":
+{
+	"frame": {"x":581,"y":1,"w":286,"h":288},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":27,"w":286,"h":288},
+	"sourceSize": {"w":340,"h":340}
+},
+"04.png":
+{
+	"frame": {"x":1,"y":289,"w":286,"h":288},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":27,"w":286,"h":288},
+	"sourceSize": {"w":340,"h":340}
+},
+"05.png":
+{
+	"frame": {"x":581,"y":291,"w":285,"h":287},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":27,"w":285,"h":287},
+	"sourceSize": {"w":340,"h":340}
+},
+"06.png":
+{
+	"frame": {"x":291,"y":576,"w":285,"h":287},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":27,"w":285,"h":287},
+	"sourceSize": {"w":340,"h":340}
+},
+"07.png":
+{
+	"frame": {"x":580,"y":580,"w":285,"h":287},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":27,"w":285,"h":287},
+	"sourceSize": {"w":340,"h":340}
+},
+"08.png":
+{
+	"frame": {"x":1,"y":577,"w":285,"h":287},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":27,"w":285,"h":287},
+	"sourceSize": {"w":340,"h":340}
+},
+"09.png":
+{
+	"frame": {"x":1,"y":864,"w":285,"h":287},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":27,"w":285,"h":287},
+	"sourceSize": {"w":340,"h":340}
+},
+"10.png":
+{
+	"frame": {"x":290,"y":863,"w":285,"h":287},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":27,"w":285,"h":287},
+	"sourceSize": {"w":340,"h":340}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "shield3.png",
+	"format": "RGBA8888",
+	"size": {"w":868,"h":1150},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f335b322fe8a522266641d88e7e28865:31b59f3732ce2f8f55ec248239d2e566:9848d8a94d8c28c0f36922dc10d075b4$"
+}
+}
